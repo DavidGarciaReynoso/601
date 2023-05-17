@@ -39,7 +39,7 @@ public class V1TRIFIV {
         if(mult5==0){
             System.out.println("FIV");
         }
-        if(mult3==0 && mult5==9){
+        if(mult3==0 && mult5==0){
             System.out.println("TRIFIV");
             
         }
