@@ -1,8 +1,9 @@
-﻿package  {
+﻿﻿package  {
 	import flash.display.MovieClip;
 	import flash.events.Event;
 	import flash.utils.Timer;
 	import flash.events.TimerEvent;
+
 	
 	public class antagonista extends MovieClip{
 		
@@ -12,12 +13,16 @@
 		private var limite_izq: int = 32;
 		private var cambia: Timer=new Timer(200,0); 
 		private var tipo:Number;
+		private var lanzar: Timer = new Timer(5,0);
 		
 		public function antagonista() {
 			// constructor code
 			addEventListener(Event.ENTER_FRAME, actualiza);
 			cambia.addEventListener(TimerEvent.TIMER, cambia_dir);
 			cambia.start();
+			lanzar.addEventListener(TimerEvent.TIMER, lanza_bala);
+			lanzar.start();
+			
 		}
 		
 		public function actualiza(e: Event){
@@ -28,6 +33,9 @@
 		if(x<=limite_izq){
 			dir=1
 		}
+		if (setup.puntos > 0 && setup.puntos%5==0){
+			vel+=1;
+			}
 		}
 		public function cambia_dir(e:TimerEvent){
 			tipo=Math.floor(Math.random()*8);
@@ -39,9 +47,15 @@
 				
 				case 2:
 				dir= -1;
-				break;
+				break;v
 			}
 		}
+		public function lanza_bala(e: TimerEvent){
+			//trace("lanza bala");
+			var bala_nueva = new bala(x,y);
+			stage.addChild(bala_nueva);
+			}
+
 		
 	}
 	
