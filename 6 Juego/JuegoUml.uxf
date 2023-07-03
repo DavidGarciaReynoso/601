@@ -1,0 +1,60 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>376</x><y>24</y><w>168</w><h>152</h></coordinates><panel_attributes>MovieClip
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>48</x><y>240</y><w>168</w><h>168</h></coordinates><panel_attributes>Setup
+
+--
+
+-fondo_new
+-piso_new
++protagonista_new
+.antagonista_new
++puntos:Numer=0
++puntos_box_new
+
+--
++function setup()
++function actualiza_puntos(e:Event)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>416</y><w>168</w><h>200</h></coordinates><panel_attributes>Antagonista
+
+--
+
+-vel
+-dir
+-limite_der
+-limite_izq
+-cambia
+-tipo
+-lanzar
+
+--
++function actualiza(e: Event)
++function cambia_dir(e:TimerEvent)
++function lanza_bala(e: TimerEvent)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>416</y><w>168</w><h>192</h></coordinates><panel_attributes>Protagonista
+
+--
+
+-izq
+-der
+-vel
+-lim_x_der
+-lim_x_izq
+
+--
++function protagonista()
++function motor(e: Event)
++function controles()
++function keydown(e: KeyboardEvent):
++function keyup(e: KeyboardEvent)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>656</x><y>248</y><w>168</w><h>152</h></coordinates><panel_attributes>Bala
+--
+
+-vel:Number = 5
+
+--
+bala(pos_x, pos_y)
+mover(e.Event)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>128</x><y>96</y><w>264</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1-1</panel_attributes><additional_attributes>10;180;10;20;310;20</additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>168</y><w>128</w><h>264</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1-1</panel_attributes><additional_attributes>10;310;10;180;140;180;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>168</y><w>96</w><h>264</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1.1</panel_attributes><additional_attributes>100;310;100;180;10;180;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>536</x><y>96</y><w>232</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1 - ∞</panel_attributes><additional_attributes>270;190;270;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>320</y><w>464</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;-
+1 - ∞</panel_attributes><additional_attributes>560;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>512</y><w>96</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;-
+1-1</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>136</x><y>400</y><w>120</w><h>136</h></coordinates><panel_attributes>lt=&lt;&lt;-
+1-1</panel_attributes><additional_attributes>130;150;10;150;10;10</additional_attributes></element></diagram>

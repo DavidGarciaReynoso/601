@@ -13,7 +13,7 @@
 		private var limite_izq: int = 32;
 		private var cambia: Timer=new Timer(200,0); 
 		private var tipo:Number;
-		private var lanzar: Timer = new Timer(5,0);
+		private var lanzar: Timer = new Timer(500,0);
 		
 		public function antagonista() {
 			// constructor code
@@ -51,7 +51,7 @@
 			}
 		}
 		public function lanza_bala(e: TimerEvent){
-			//trace("lanza bala");
+			trace("lanza bala");
 			var bala_nueva = new bala(x,y);
 			stage.addChild(bala_nueva);
 			}
