@@ -42,11 +42,11 @@
 		}
 		public function keydown(e: KeyboardEvent):void{
 			switch (e.keyCode){
-				case 68: //ASCII 68=d 65=a
+				case 39: //ASCII 68=d 65=a
 					der = true;
 					break;
 				
-				case 65:
+				case 37:
 					izq = true;
 					break;
 			}
@@ -54,11 +54,11 @@
 		}
 		public function keyup(e: KeyboardEvent):void{
 			switch(e.keyCode){
-				case 68:
+				case 39:
 					der = false;
 					break;
 					
-			 	case 65:
+			 	case 37:
 					izq = false;
 					break;
 			}
@@ -67,4 +67,3 @@
 
 	}
 }	
-
