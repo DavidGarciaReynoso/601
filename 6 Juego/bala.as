@@ -1,4 +1,4 @@
-﻿package  {
+﻿﻿package  {
 	import flash.display.MovieClip;
 	import flash.events.Event;
 	
@@ -35,4 +35,3 @@
 
 	}
 	
-
